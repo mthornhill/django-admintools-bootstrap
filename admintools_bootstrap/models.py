@@ -20,8 +20,6 @@ from admin_tools.menu import items
 # addming icon argument to base MenuItem class
 items.MenuItem.icon = None
 
-import admintools_bootstrap.settings
-
 # patching django's FieldSet
 from django.contrib.admin import helpers
 from django import forms
