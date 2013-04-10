@@ -10,16 +10,6 @@ from BeautifulSoup import BeautifulSoup
 
 register = template.Library()
 
-@register.simple_tag
-def admin_media_prefix():
-	"""
-	ADMIN_MEDIA_PREFIX compatible for django 1.4.
-	"""
-	try:
-		return settings.ADMIN_MEDIA_PREFIX
-	except:
-		return settings.STATIC_URL+"admin/"
-
 
 @register.simple_tag
 def atb_site_link():
